@@ -1,0 +1,122 @@
+.dishContainer{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.dishContainer .menuCard{
+    width: 100%;
+}
+
+.rowcontainer{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 5px;
+    padding: 10px 0;
+}
+
+.rowcontainer::-webkit-scrollbar{
+    display: none;
+}
+
+.dishItemcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkoutcontainer{
+    width: 100%;
+    min-width: 320px;
+
+}
+
+/* right-menu */
+.right-menu{
+    width: 350px;
+    height: 100%;
+    background: rgb(240, 239, 239);
+    position: fixed;
+    right: 0;
+    top: 60px;
+    z-index: 105;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 0 3 20 rgba(0, 0, 0, 0.1);
+    border-radius: 20px 0 0 20px;
+    transform: translateX(200%);
+}
+
+.right-menu.active{
+    transform: translateX(0%);
+}
+
+/* cart */
+.cartcontainer{
+    width: 100%;
+    min-height: 280px;
+    max-height: 300px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.cartcontainer ::-webkit-scrollbar{
+    display: none;
+
+}
+
+/* Total Section */
+.totalSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    margin: 15px 0;
+}
+
+.totalSection h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #29233c;
+}
+
+.totalSection p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a2b3c;
+}
+
+.totalSection p span{
+    font-size: 14px;
+    color: #2a2b3c;
+}
+
+.checkout {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    background: #f8901c;
+    color: #faf9fb;
+    border-radius: 100vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+/*  Responsiveness - tablet */
+
+@media screen and (min-width: 650px) {
+    .rowcontainer{
+        justify-content: space-between;
+    }
+    
+}

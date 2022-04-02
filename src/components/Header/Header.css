@@ -1,0 +1,130 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: white;
+    width: 100%;
+    align-content: center;
+    padding: 1.5px 5px;
+    box-shadow: 0 3px  rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.logo img{
+    min-width: 25px;
+    width: 70px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 9rem;
+    height: 30px;
+    border: 1px solid rgb(187, 186, 186);
+    background: rgb(253, 247, 247);
+    overflow: hidden;
+} 
+
+.searchBar .search {
+    font-size: 15px;
+}
+
+.searchInput{
+    background-color: transparent;
+    width: 7rem;
+    height: 25px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.shoppingCart{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.shoppingCart .cart{
+    font-size: 30px;
+}
+
+.shoppingCart .content {
+    background: rgb(224, 83, 28);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.profileContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.profileContainer .imageBox{
+    width: 40;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 100vw;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileContainer .username{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-left: 10px;
+    display: none;
+    align-items: center;
+}
+
+.toggle .barChat {
+    transform: rotate(90deg);
+    font-size: 30px;
+    color: #444;
+}
+
+
+@media screen and (min-width: 650px) {
+    .searchBar {
+        width: 60%
+    }
+    .searchInput{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (min-width: 950px) {
+    .toggle{
+        display: none;
+    }
+
+    .profileContainer .username{
+        display: block;
+    }
+    
+}
+

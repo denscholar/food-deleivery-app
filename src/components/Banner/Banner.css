@@ -1,0 +1,43 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 5rem 0.5rem 0 0.5rem;
+    height: 10rem;
+    border-radius: 8px;
+    background: rgba(231, 199, 139, 0.411);
+}
+
+.banner img {
+    width: 12rem;
+    height: 12rem;
+}
+
+
+
+.banner .content h4{
+    font-size: 20px;
+    padding: 8px 15px;
+    text-align: left;
+}
+.banner .content p{
+    font-size: 15px;
+    text-align: left;
+    padding: 0 0 0 18px;
+    line-height: 18px;
+
+}
+
+.banner .content button{
+    float: left;
+    margin: 10px 20px;
+    padding: 8px;
+    width: 70%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background: rgb(122, 65, 0);
+    font-size: 15px;
+}
