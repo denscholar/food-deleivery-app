@@ -14,7 +14,7 @@ const Main = () => {
   const [filteredItems, setFilteredItems] = useState(Items);
   const cart = useSelector((state) => state.cart);
   
-  // console.log(cart);
+  console.log(cart);
 
   // state for toggling the toggle icon
   const [isToggle, setIsToggle] = useState(false);

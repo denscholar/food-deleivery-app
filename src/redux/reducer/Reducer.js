@@ -15,13 +15,13 @@ export const fetCartsData = (data) => ({
 export const subtractQuantity = id => {
   return {
     type: SUB_QUANTITY,
-    id,
+    payload: id,
   };
 };
 export const addQuantity = id => {
   return {
     type: ADD_QUANTITY,
-    id,
+    payload: id,
   };
 };
 
@@ -30,17 +30,22 @@ export const getTotal = (payload) => ({
   payload,
 });
 
+const initialState = {
+  cart: {},
+  order: []
+}
+
 // Create the reducers for each action
 const reducer = (state = [], action) => {
   switch (action.type) {
     case GET_CART:
       return [...state, action.payload];
     case ADD_QUANTITY:
-      return [...state, ...action.payload];
+      return [...state, action.payload];
     case SUB_QUANTITY:
-      return [...state, ...action.payload];
+      return [...state, action.payload];
     case GET_TOTAL:
-      return [...state, ...action.payload];
+      return [...state, action.payload];
     default:
       return state;
   }

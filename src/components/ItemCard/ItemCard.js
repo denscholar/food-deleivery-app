@@ -21,9 +21,6 @@ const ItemCard = (props) => {
 
   useEffect(() => {
     if(isCart){
-      
-      // cartData.push(isCart)
-      // console.log(cartData)
       dispatch(fetCartsData(isCart))
     }
   }, [isCart])

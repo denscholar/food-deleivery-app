@@ -5,6 +5,8 @@ import { addQuantity, subtractQuantity } from '../../redux/reducer/Reducer';
 import './CartItem.css';
 
 const CartItems = ({itemId, name, imgSrc, price}) => {
+    
+
 
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart)
@@ -26,10 +28,6 @@ const CartItems = ({itemId, name, imgSrc, price}) => {
         dispatch(subtractQuantity(reduceCart))
     }
 
-    // useEffect(() => {
-    //     increaseQuantity();
-    //     decreaseQuantity();
-    // }, [])
     
   return (
     <div className="cartItem">
